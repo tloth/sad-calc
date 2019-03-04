@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Sad Calc</title>
+</head>
+
+<body>
+    <section id="buttons">
+        <div class="buttons" id="numButt">
+            <button type="button" class="numbers" id="zero" onclick="display.answer.value+='0'">0</button>
+            <button type="button" class="numbers" id="one" onclick="display.answer.value+='1'">1</button>
+            <button type="button" class="numbers" id="two" onclick="display.answer.value+='2'">2</button>
+            <button type="button" class="numbers" id="three" onclick="display.answer.value+='3'">3</button>
+            <button type="button" class="numbers" id="four" onclick="display.answer.value+='4'">4</button>
+            <button type="button" class="numbers" id="five" onclick="display.answer.value+='5'">5</button>
+            <button type="button" class="numbers" id="six" onclick="display.answer.value+='6'">6</button>
+            <button type="button" class="numbers" id="seven" onclick="display.answer.value+='7'">7</button>
+            <button type="button" class="numbers" id="eight" onclick="display.answer.value+='8'">8</button>
+            <button type="button" class="numbers" id="nine" onclick="display.answer.value+='9'">9</button>
+            <button type="button" class="numbers" id="decimal" onclick="display.answer.value+='.'">.</button>
+        </div>
+
+        <div class="buttons" id="funButt">
+            <button type="button" class="functions" id="plus" onclick="display.answer.value+='+'">+</button>
+            <button type="button" class="functions" id="minus" onclick="display.answer.value+='-'">-</button>
+            <button type="button" class="functions" id="times" onclick="display.answer.value+='*'">*</button>
+            <button type="button" class="functions" id="divide" onclick="display.answer.value+='/'">/</button>
+            <button type="button" class="functions" id="equals" onclick="display.answer.value = eval(display.answer.value)">=</button>
+
+            <button type="button" id="clear" onclick="display.answer.value=''">C</button>
+        </div>
+    </section>
+    
+    <section id="display">
+        <form name="display">
+            <input type="text" name="answer">
+        </form>
+    </section>
+    <footer>This is my ugly foster child.</footer>
+</body>
+</html>
